@@ -66,3 +66,6 @@ $RECYCLE.BIN/
 # Sublime Text
 # SublimeText project files
 *.sublime-workspace
+
+# Vagrant
+.vagrant/
