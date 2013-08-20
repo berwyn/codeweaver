@@ -10,9 +10,7 @@
 // = require_self
 // = require_tree .
 
-$purple-dull: #5C2680
-$purple-dark: #44036F
-$purple-medium: #6A0AAB
+@import "colors"
 
 *
 	border-radius: 0px !important
@@ -20,13 +18,14 @@ $purple-medium: #6A0AAB
 #nav
 	padding: 10px 0px
 	background-color: $purple-dull
+	border-right: black 1px solid
 	a
-		color: #DDD
+		color: $gray
 		&:hover
 			background-color: $purple-medium
 	li.active
 		a
-			color: #FFF
+			color: white
 			background-color: $purple-dark
 			
 .affix,
@@ -36,6 +35,3 @@ $purple-medium: #6A0AAB
 	top: 0
 	bottom: 0
 	left: 0
-
-#primary
-	min-height: 10000px

@@ -3,15 +3,14 @@
 	%head
 		%title Codeweaver
 		=stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+		=stylesheet_link_tag "bootstrap", media: "all", "data-turbolinks-track" => true
 		=javascript_include_tag "application", "data-turbolinks-track" => true
 		=csrf_meta_tags
 		%meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
-		%link{rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css'}
-		%script{type: 'text/javascript', src: '//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js'}
 	%body
 
 		.row
-			#nav.col-xs-2.col-md-3{data: {spy: 'affix', :'offset-top' => '0px'}}
+			#nav.col-xs-2{data: {spy: 'affix', :'offset-top' => '0px'}}
 				%ul.nav.nav-pills.nav-stacked
 					%li{:class => ('active' if params[:controller] == 'index')}
 						%a{href: '#'} Home
@@ -20,6 +19,5 @@
 					%li
 						%a{href: '#'} Link2
 
-			#primary.col-xs-10.col-xs-offset-2.col-md-9.col-md-offset-3.pull-right
-				.container
-					= yield
+			#primary.col-xs-10.col-xs-offset-2.pull-right
+				= yield
