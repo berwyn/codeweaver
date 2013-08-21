@@ -13,23 +13,19 @@
 #= require jquery
 #= require jquery_ujs
 #= require turbolinks
-#= require_tree .
 #= require bootstrap
+#= require_tree .
 
 affix_sidepane = () ->
-	if $(window).width() >= 768
-		console.log 'Affixing sidebar'
-		$('#nav').affix {
-			offset: {
-				top: 0
-				bottom: 0
-			}
-		}
-	else
-		$(window).off('.affix')
-		$('#nav').removeData('affix').removeClass('affix affix-top affix-bottom')
-
-$(document).ready ->
-	affix_sidepane()
+	$('#nav').affix {offset: 0}
 	$(window).resize ->
-		affix_sidepane()
+		_sidenav = $('#nav')
+		_window = $(window)
+		if _window.width() >= 768
+			if _window.scrollTop() == 0 then _sidenav.addClass('affix-top') else _sidenav.addClass('affix')
+		else
+			_window.off('.affix')
+			_sidenav.removeClass('affix-top affix')
+
+$(document).ready affix_sidepane
+$(document).on 'page:load', affix_sidepane

@@ -10,14 +10,12 @@
 	%body
 		.row
 			.col-sm-2
-				#nav
+				#nav.sidenav
 					%ul.nav.nav-pills.nav-stacked
 						%li{:class => ('active' if params[:controller] == 'index')}
-							%a{href: '/'} Home
-						%li
-							%a{href: '#'} Link1
-						%li
-							%a{href: '#'} Link2
+							= link_to 'Home', root_url
+						%li{:class => ('active' if params[:controller] == 'posts')}
+							= link_to 'Blog', posts_path
 			.col-sm-10
 				#primary{style: 'height:10000px;'}
 					= yield
