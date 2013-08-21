@@ -1,10 +1,7 @@
-Codeweaver::Application.routes.draw do
-  get "index/index"
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+Codeweaver::Application.routes.draw do  
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  resources :posts
+
   root 'index#index'
 
   # Example of regular route:

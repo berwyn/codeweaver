@@ -2,22 +2,22 @@
 %html{lang: 'en'}
 	%head
 		%title Codeweaver
-		=stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
-		=stylesheet_link_tag "bootstrap", media: "all", "data-turbolinks-track" => true
-		=javascript_include_tag "application", "data-turbolinks-track" => true
-		=csrf_meta_tags
+		= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+		= stylesheet_link_tag "bootstrap", media: "all", "data-turbolinks-track" => true
+		= javascript_include_tag "application", "data-turbolinks-track" => true
+		= csrf_meta_tags
 		%meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
 	%body
-
 		.row
-			#nav.col-xs-2{data: {spy: 'affix', :'offset-top' => '0px'}}
-				%ul.nav.nav-pills.nav-stacked
-					%li{:class => ('active' if params[:controller] == 'index')}
-						%a{href: '#'} Home
-					%li
-						%a{href: '#'} Link1
-					%li
-						%a{href: '#'} Link2
-
-			#primary.col-xs-10.col-xs-offset-2.pull-right
-				= yield
+			.col-sm-2
+				#nav
+					%ul.nav.nav-pills.nav-stacked
+						%li{:class => ('active' if params[:controller] == 'index')}
+							%a{href: '/'} Home
+						%li
+							%a{href: '#'} Link1
+						%li
+							%a{href: '#'} Link2
+			.col-sm-10
+				#primary{style: 'height:10000px;'}
+					= yield

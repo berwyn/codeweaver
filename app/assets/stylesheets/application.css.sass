@@ -16,6 +16,7 @@
 	border-radius: 0px !important
 
 #nav
+	width: inherit
 	padding: 10px 0px
 	background-color: $purple-dull
 	border-right: black 1px solid
@@ -28,10 +29,11 @@
 			color: white
 			background-color: $purple-dark
 			
-.affix,
-.affix-top,
-.affix-bottom
-	position: absolute
-	top: 0
-	bottom: 0
-	left: 0
+@media screen and (min-width: 768px)
+	#nav
+		height: 100%
+
+	.affix,
+	.affix-top,
+	.affix-bottom
+		position: fixed
