@@ -16,16 +16,17 @@
 #= require bootstrap
 #= require_tree .
 
-affix_sidepane = () ->
+modify_nav = ->
+	_sidenav = $('#nav > ul')
+	_window = $(window)
+	if _window.width() >= 768
+		_sidenav.addClass('nav-stacked')
+		_sidenav.removeClass('nav-horiz')
+	else
+		_sidenav.removeClass('nav-stacked')
+		_sidenav.addClass('nav-horiz')
 	$('#nav').affix {offset: 0}
-	$(window).resize ->
-		_sidenav = $('#nav')
-		_window = $(window)
-		if _window.width() >= 768
-			if _window.scrollTop() == 0 then _sidenav.addClass('affix-top') else _sidenav.addClass('affix')
-		else
-			_window.off('.affix')
-			_sidenav.removeClass('affix-top affix')
 
-$(document).ready affix_sidepane
-$(document).on 'page:load', affix_sidepane
+$(window).resize modify_nav
+$(document).ready modify_nav
+$(document).on 'page:load', modify_nav

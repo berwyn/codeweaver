@@ -8,14 +8,14 @@
           var errors = #{@post.errors.to_json}
 
     .field.form-group
-      .col-xs-12.col-md-11.col-md-offset-1
+      .col-xs-12
         = f.text_field :title, placeholder: 'Title', class: 'post-title-field'
 
     .field.form-group
-      .col-xs-12.col-md-11.col-md-offset-1
+      .col-xs-12
         = f.text_area :body, rows: 15, placeholder: 'Content', class: 'post-body-field'
 
     .actions.form-group
-      .col-xs-12.col-md-11.col-md-offset-1
+      .col-xs-12
         = f.submit 'Save', data: {draft: false}, class: 'btn btn-default'
         = f.submit 'Save as draft', data: {draft: true}, class: 'btn btn-default'

@@ -24,6 +24,12 @@ body
 	padding: 10px 0px
 	background-color: $purple-dull
 	border-right: black 1px solid
+
+	ul.nav-horiz
+		margin: -10px 0px
+		li
+			height: 100%
+
 	a
 		color: $gray
 		&:hover
@@ -32,6 +38,19 @@ body
 		a
 			color: white
 			background-color: $purple-dark
+
+@media screen and (max-width: 767px)
+	.affix,
+	.affix-top,
+	.affix-bottom,
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 100
+
+	#primary
+		margin-top: 40px
 			
 @media screen and (min-width: 768px)
 	#nav
@@ -41,6 +60,8 @@ body
 	.affix-top,
 	.affix-bottom
 		position: fixed
+		top: 0
+		bottom: 0
 
 .card-host
 	display: inline-block
