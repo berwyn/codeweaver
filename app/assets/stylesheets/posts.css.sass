@@ -1,3 +1,54 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass here: http://sass-lang.com/
+
+@mixin placeholder($text-style: italic, $color: #aaa)
+	&::-webkit-input-placeholder
+		color: $color
+		font-style: $text-style
+	&:-moz-placeholder
+		color: $color
+		font-style: $text-style
+	&::-moz-placeholder
+		color: $color
+		font-style: $text-style
+	&:-ms-input-placeholder
+		color: $color
+		font-style: $text-style
+
+#errors
+	ul
+		list-style: none
+		padding-left: 0
+		li
+			width: inherit
+			margin-bottom: 10px
+
+.post-form
+	padding: 20px 0 0 0
+
+	.post-title-field,
+	.post-body-field,
+	.field_with_errors
+		outline: 0
+		border: 0px
+		width: inherit
+		@include placeholder
+	
+		&:focus
+			outline: 0
+	
+	.post-title-field
+		font-size: 150%
+
+	.field_with_errors
+		padding: 0
+		background: none
+		input,
+		textarea
+			@include placeholder(italic, #b94a48)
+
+	.tooltip
+		&:hover
+			span
+				background: #b94a48
