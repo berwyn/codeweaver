@@ -25,7 +25,7 @@
 			margin-bottom: 10px
 
 .post-form
-	padding: 20px 0 0 0
+	margin-top: 20px
 
 	.post-title-field,
 	.post-body-field,
@@ -34,6 +34,7 @@
 		border: 0px
 		width: inherit
 		@include placeholder
+		background: none
 	
 		&:focus
 			outline: 0
@@ -47,8 +48,3 @@
 		input,
 		textarea
 			@include placeholder(italic, #b94a48)
-
-	.tooltip
-		&:hover
-			span
-				background: #b94a48

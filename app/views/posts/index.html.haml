@@ -1,21 +1,17 @@
 .container
-  %h1 Listing posts
-  %table.table.table-striped
-    %thead
-      %tr
-        %th Title
-        %th Body
-        %th
-        %th
-        %th
-    %tbody
-      - @posts.each do |post|
-        %tr
-          %td= post.title
-          %td= post.body
-          %td= link_to 'Show', post
-          %td= link_to 'Edit', edit_post_path(post)
-          %td= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?'}
+  %h2 All posts
+  .card-host
+    - @posts.each do |post|
+      .card.col-lg-8.col-lg-offset-2
+        .card-header
+          %h4.card-title= post.title
+          .card-actions.pull-right
+            = link_to edit_post_path(post) do
+              .glyphicon.glyphicon-pencil
+            = link_to post, method: :delete, data: {confirm: 'Are you sure?'} do
+              .glyphicon.glyphicon-trash
+
+        %p.card-body= post.body
   %br
   = link_to 'New Post', new_post_path
   

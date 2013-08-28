@@ -53,6 +53,8 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.0)
+    font_assets (0.1.10)
+      rack
     haml (4.0.3)
       tilt
     haml-rails (0.4)
@@ -164,6 +166,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   debugger
   execjs (~> 2.0.0)
+  font_assets
   haml-rails (~> 0.4)
   jbuilder (~> 1.2)
   jquery-rails

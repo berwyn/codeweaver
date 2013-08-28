@@ -3,10 +3,10 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
 	inputs = {
-		title: title_field = $('.post-title-field')
-		body: body_field = $('.post-body-field')
+		title: $('.post-title-field')
+		body: $('.post-body-field')
 	}
-	unless errors.nil?
+	if errors?
 		for k,v of errors
 			inputs[k].tooltip {
 				title: "#{inputs[k].attr('placeholder')} #{v}"
