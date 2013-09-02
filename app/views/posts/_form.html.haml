@@ -13,6 +13,10 @@
 
     .field.form-group
       .col-xs-12
+        = f.text_area :snippet, rows: 2, placeholder: 'Snippet', class: 'post-snippet-field'
+
+    .field.form-group
+      .col-xs-12
         = f.text_area :body, rows: 15, placeholder: 'Content', class: 'post-body-field'
 
     .actions.form-group

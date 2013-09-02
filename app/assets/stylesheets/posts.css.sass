@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass here: http://sass-lang.com/
 
+@import "colors"
+
 @mixin placeholder($text-style: italic, $color: #aaa)
 	&::-webkit-input-placeholder
 		color: $color
@@ -29,6 +31,7 @@
 
 	.post-title-field,
 	.post-body-field,
+	.post-snippet-field,
 	.field_with_errors
 		outline: 0
 		border: 0px
@@ -48,3 +51,11 @@
 		input,
 		textarea
 			@include placeholder(italic, #b94a48)
+
+.card-date
+	text-size: .6em
+	color: $gray_darker
+	font-style: italic
+
+.post-card
+	min-height: 135px
