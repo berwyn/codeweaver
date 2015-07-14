@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        <div class="masthead">
+            <img src="//www.gravatar.com/avatar/{{ site.email | md5 }}?s=1024" alt="" class="avatar">
+            <div class="links">
+                {% for page in site.pages %}
+                    {% if page.title %}
+                        <a href="{{ page.url | preprend: site.baseurl }}" class="link">
+                            <i class="zmdi zmdi-hc-2x zmdi-{{ page.icon }}"></i>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>
