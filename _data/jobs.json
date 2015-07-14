@@ -1,6 +1,37 @@
 [
     {
         "position": "Front-end Developer",
-        "name": "MaritzCX" 
+        "name": "MaritzCX",
+        "icon": "/images/mcx.jpeg",
+        "tech": [
+            "javascript",
+            "backbone",
+            "marionette",
+            "c#",
+            "windows"
+        ]
+    },
+    {
+        "position": "Front-end Developer",
+        "name": "Workfront",
+        "icon": "/images/workfront.jpeg",
+        "tech": [
+            "javascript",
+            "es6",
+            "gulp",
+            "angularjs",
+            "java",
+            "requirejs"
+        ]
+    },
+    {
+        "position": "Contractor",
+        "name": "Utah Colleges of Applied Technology",
+        "icon": "/images/ucat.png",
+        "tech": [
+            "c#",
+            "wcf",
+            "wpf"
+        ]
     }
 ]

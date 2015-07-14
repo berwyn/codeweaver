@@ -14,20 +14,21 @@ icon: home
         </p>
     </div>
 
-  <h1 class="page-heading">Posts</h1>
+    <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li class="card">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <ul class="post-list">
+        {% for post in site.posts %}
+            <li class="card">
+                <div class="card-content">
+                    <h2 class="card-title">
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <h5 class="card-subtitle post-meta">{{ post.date | date: "%b %-d, %Y" }}</h5>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
