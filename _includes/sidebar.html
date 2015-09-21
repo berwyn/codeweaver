@@ -16,6 +16,10 @@
 		</a>
 
 		<div class="trigger">
+			<a href="{{ site.baseurl }}/" class="page-link block">
+				<i class="nav-icon inline-block vertical-center zmdi zmdi-hc-2x zmdi-home"></i>
+				<span class="nav-text inline-block vertical-center">Home</span>
+			</a>
 			{% for page in site.pages %} {% if page.title %}
 				<a class="page-link block" href="{{ page.url | prepend: site.baseurl }}">
 					<i class="nav-icon inline-block vertical-center zmdi zmdi-hc-2x zmdi-{{ page.icon }}"></i>
