@@ -11,6 +11,11 @@ twitter_username: _berwyn_
 github_username:  berwyn
 destination: _site
 permalink: /blog/:year/:month/:day/:title.html
+include: ['_pages']
 
 # Build settings
 markdown: kramdown
+
+collections:
+  pages:
+    permalink: /:path
