@@ -3,6 +3,16 @@ $ColorPrimary2: #E25AFF;
 $ColorPrimary3: #CE3CED;
 $ColorAccent1: #60A009;
 $ColorAccent2: #A2ED3C;
+$colorDull: black; // TODO: Replace this later
+
+.avatar {
+    border: 6px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
 
 /**
  * Masthead
@@ -22,18 +32,6 @@ $ColorAccent2: #A2ED3C;
         display: inline-block;
         height: 100%;
         position: absolute;
-    }
-
-    .avatar {
-        border: 6px solid white;
-        border-radius: 50%;
-        display: block;
-        height: 250px;
-        margin: auto;
-        max-width: 250px;
-        position: relative;
-        top: 50px;
-        z-index: 1;
     }
 
     .links {
@@ -129,72 +127,6 @@ $ColorAccent2: #A2ED3C;
     }
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: white;
-        display: inline-block;
-        line-height: $base-line-height;
-        vertical-align: middle;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-}
-
-
 
 /**
  * Site footer
@@ -243,20 +175,7 @@ $ColorAccent2: #A2ED3C;
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
+@media only screen and (max-width: 875px) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -275,55 +194,6 @@ $ColorAccent2: #A2ED3C;
 
 .page-heading {
     font-size: 20px;
-}
-
-.post-list,
-.job-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.job-list {
-    .inline-card {
-        height: 350px;
-        margin: 0 10px 30px 10px;
-        text-align: left;
-        vertical-align: top;
-        width: 200px;
-
-        &:first-child {
-          margin-left: 0;
-        }
-
-        @include media-query($on-palm) {
-            margin: 10px 0;
-        }
-
-        .card-hero {
-            height: 200px;
-            width: 200px;
-
-            @include media-query($on-palm) {
-                width: 100%;
-                max-height: 200px;
-                overflow: hidden;
-            }
-
-            img {
-                @include media-query($on-palm) {
-                    top: -40%;
-                }
-            }
-        }
-
-        @include media-query($on-palm) {
-            width: 100%;
-        }
-    }
 }
 
 .post-meta {

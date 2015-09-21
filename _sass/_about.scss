@@ -1,0 +1,44 @@
+.job-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+    .inline-card {
+        height: 350px;
+        margin: 0 20px 30px 0;
+        text-align: left;
+        vertical-align: top;
+        width: 200px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        @include media-query($on-palm) {
+            margin: 10px 0;
+        }
+
+        .card-hero {
+            height: 200px;
+            width: 200px;
+
+            @include media-query($on-palm) {
+                width: 100%;
+                max-height: 200px;
+                overflow: hidden;
+            }
+
+            img {
+                @include media-query($on-palm) {
+                    top: -40%;
+                }
+            }
+        }
+
+        @include media-query($on-palm) {
+            width: 100%;
+        }
+    }
+}

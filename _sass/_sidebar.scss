@@ -1,0 +1,99 @@
+$sidebarWidth: 20vw;
+$sidebarHeight: 100vh;
+
+.sidebar {
+    width: $sidebarWidth;
+    height: $sidebarHeight;
+    position: fixed;
+    background-color: $ColorPrimary1;
+    
+    .avatar {
+        border-width: 2px;
+        height: auto;
+        margin: 20px auto;
+        max-height: 80%;
+        max-width: 80%;
+        width: auto;
+    }
+    
+    .nav-icon {
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100vw;
+        height: 70px;
+        
+        .avatar {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .site-footer,
+    .page-content {
+        margin-left: $sidebarWidth;
+    }
+}
+
+.site-nav {
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: white;
+        line-height: $base-line-height;
+        margin: 10px 20px;
+        vertical-align: middle;
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}

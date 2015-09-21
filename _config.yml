@@ -10,6 +10,7 @@ url: "http://berwyn.me" # the base hostname & protocol for your site
 twitter_username: _berwyn_
 github_username:  berwyn
 destination: _site
+permalink: /blog/:year/:month/:day/:title.html
 
 # Build settings
 markdown: kramdown

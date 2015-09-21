@@ -1,6 +1,7 @@
 ---
-layout: frontpage
+layout: default
 icon: home
+display: Home
 ---
 
 <div class="home">
@@ -18,14 +19,7 @@ icon: home
 
     <ul class="post-list">
         {% for post in site.posts %}
-            <li class="card">
-                <div class="card-content">
-                    <h2 class="card-title">
-                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                    <h5 class="card-subtitle post-meta">{{ post.date | date: "%b %-d, %Y" }}</h5>
-                </div>
-            </li>
+            {% include post-card.html %}
         {% endfor %}
     </ul>
 

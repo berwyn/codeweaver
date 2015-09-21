@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Dummy Post 2"
+date:   2015-07-22 04:49:58
+categories: jekyll update
+---
+
+Dummy Post 2

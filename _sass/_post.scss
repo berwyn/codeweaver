@@ -1,0 +1,23 @@
+.post-list {
+	margin: 0;
+	list-style: none;
+	
+	> .post {
+		border-bottom: 1px solid darkgray;
+		padding: $spacing-unit 0;
+		
+		&:first-of-type {
+			padding-top: 0;
+		}
+		
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+}
+
+.post {
+	.card-title {
+		margin-bottom: 0;
+	}
+}
