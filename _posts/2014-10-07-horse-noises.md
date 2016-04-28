@@ -33,7 +33,8 @@ It's nothing special and is mostly done, but it's already been an enormous help 
 
 ---
 
-{<1>}![PVL logo](/content/images/2014/Oct/Azura-Abbreviated-Modern-with-Outline.png)
+![PVL logo](/images/other/Azura-Abbreviated-Modern-with-Outline.png)
+
 #### Ponyville Live!
 PVL has the most work done on it. It can query the server for any info it needs, and has the structure in place to play any audio station. It's just waiting on Neigh in that regard.
 
@@ -47,7 +48,8 @@ There will also be integration with a secret project I'm cooking up that'll come
 
 ---
 
-{<2>}![BronyTunes logo](/content/images/2014/Oct/bronytunes.png)
+![BronyTunes logo](/images/other/bronytunes.png)
+
 #### BronyTunes
 BronyTunes has quite a bit of skeleton in place, and is able to get any data it needs from the server. The problem is right now that there's no way to display it.
 
@@ -57,15 +59,17 @@ Currently, I'm working with mockups to figure out how I want the app to look.
 
 Why yes, yes I did!
 
+
 <blockquote 
-	class="twitter-tweet" 
+	class="twitter-tweet inline-block" 
     lang="en"
     align="center"
     data-dnt="true">	
 <p>Nope! Definitely no <a href="https://twitter.com/BronyTunesApp">@BronyTunesApp</a> mockups and plans going on here! Not at all! <a href="http://t.co/ytZ4iwsQvR">pic.twitter.com/ytZ4iwsQvR</a></p>&mdash; berewolf (@_berwyn_) <a href="https://twitter.com/_berwyn_/status/456251915890728960">April 16, 2014</a></blockquote>
 
+
 <blockquote 
-	class="twitter-tweet" 
+	class="twitter-tweet inline-block" 
     lang="en"
     align="center"
     data-dnt="true">
@@ -79,7 +83,8 @@ Search is also something that needs to be looked at. Having access to the BronyT
 
 ---
 
-{<3>}![EqBeats logo](/content/images/2014/Oct/eqbeats.png)
+![EqBeats logo](/images/other/eqbeats.png)
+
 #### EqBeats
 EqBeats has had a fair bit of time, both in code and in design, heavily invested in it. Some of the basics are already working, and it had media playback that eventually turned into Neigh.
 
@@ -87,7 +92,8 @@ So, even though it's close to ready to go (as far as the basics are concerned), 
 
 ---
 
-{<4>}![top secret](/content/images/2014/Oct/topsecret.jpg)
+![top secret](/images/other/topsecret.jpg)
+
 #### Betas
 Now, the part that will most interest people, getting their hands on these apps. When I feel like each app is ready to be tested, I'll be making a Google+ group for that app and using the Play Store's official beta programme.
 
@@ -104,7 +110,7 @@ When the beta for an app is ready to launch, I'll have the app's Twitter announc
 ---
 <a name="tldr"></a>
 
-{<5>}![tl;dr](/content/images/2014/Oct/mlfw1012_46183_-_animated_did_not_read_lol_gif_image_macro_lol_didnt_read_meme_rainbow_dash_tldr.gif)
+![tl;dr](/images/ponies/mlfw1012_46183_-_animated_did_not_read_lol_gif_image_macro_lol_didnt_read_meme_rainbow_dash_tldr.gif)
 
 #### Neigh:
 - [✓] Music player

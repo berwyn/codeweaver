@@ -37,7 +37,7 @@ But let's circle back to Skype.
 
 _Oh Skype._
 
-{<1>}![](/content/images/2014/Nov/605-y-u-no-guy.jpg)
+![](/images/other/605-y-u-no-guy.jpg)
 
 ### Microsoft, why have you forsaken me?
 
@@ -57,7 +57,7 @@ And the thing is, this isn't the only Microsoft app giving me grief. I own an Xb
 
 Silly Microsoft, your apps are supposed to be _better_ on their native platform!
 
-{<2>}![](/content/images/2014/Nov/mlfw2168_large.jpg)
+![](/images/ponies/mlfw2168_large.jpg)
 
 Oh, and can we talk navigation?
 
@@ -100,4 +100,4 @@ For now, I think I'll stick to 8.1 and explore the SDK.
 
 Until next time, I bid you all adieu, and leave you with this example of how I feel about hopping back into C# after a couple years away.
 
-{<3>}![](/content/images/2014/Nov/b7e.jpg)
+![](/images/other/b7e.jpg)

@@ -28,4 +28,4 @@ Now that I have a decent platform, I'm hoping to start enforcing a more decent c
 
 Until next time, have a cute miniature horse:
 
-{<1>}![](/content/images/2014/Jul/astrowoona_by_fongsaunder_d4dhcz1.png)
+![](/images/ponies/astrowoona_by_fongsaunder_d4dhcz1.png)

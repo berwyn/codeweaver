@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Jenkins - The CI We Love to Hate
-date: 2015-08-15 11:23:00
+title: "Jenkins - The CI We Love to Hate"
+date: 2014-08-15 11:23:00
 tags: code, ponies, jenkins, werker, retrolambda, pvl, eqbeats, bronytunes, android
 ---
 I'll start off with this: I _hate_ [Jenkins](http://jenkins-ci.org/). Full stop.
 
 <!-- break -->
 
-{<1>}![Jenkins](/content/images/2014/Aug/jenkins_logo.png)
+![Jenkins](/images/other/jenkins_logo.png)
 
 For the uninitiated, Jenkins is a CI server. It's designed to take your code, build it, run your test suite, and report the results. In this sense, it's a really strong tool to have in your arsenal.
 
@@ -37,7 +37,7 @@ chmod 777 .
 export ANDROID_HOME="/home/azureuser/.android-sdk"
 ```
 
-{<2>}![](/content/images/2014/Aug/mlfw5804_16094.gif)
+![](/images/ponies/mlfw5804_16094.gif)
 
 Now it builds, and you can all check out the artefacts on [my ci server](http://ci.codeweaver.so/job/Neigh/).
 
@@ -45,4 +45,4 @@ In the near future, I'll do some writeups and walkthroughs of these apps for tho
 
 As always, I leave you with a cute smallhorse
 
-{<3>}![](/content/images/2014/Aug/new_cttzranvas_by_dragonfoxgirl_d77c66d.png)
+![](/images/ponies/new_cttzranvas_by_dragonfoxgirl_d77c66d.png)

@@ -24,7 +24,7 @@ The device I was using was none of this. I first turned it on, and was greeted b
 
 Suddenly, flashbacks to the 90's and one of these babies ensued.
 
-{<1>}![Palm Treo](/content/images/2014/Nov/palm-treo750_00.jpg)
+![Palm Treo](/images/other/palm-treo750_00.jpg)
 
 ## Demon in the machine
 
@@ -40,7 +40,7 @@ I have the tablet check for updates, and in the meantime fetch myself a beverage
 
 But the screen won't accept finger input.
 
-{<2>}![iMad](/content/images/2014/Nov/lyra_table.gif)
+![iMad](/images/ponies/lyra_table.gif)
 
 Well, I tap my way back to Windows Update to see what the consensus is.
 
@@ -90,5 +90,6 @@ I might also continue this as a blog series to document my trials and tribulatio
 
 For now, I bid you adieu, and leave you a photo of a horse appropriate for the holiday.
 
-{<3>}![](/content/images/2014/Nov/thanksgiving_dress_by_elosande-d6w1nlj.png)
+![](/images/ponies/thanksgiving_dress_by_elosande-d6w1nlj.png)
+
 Image courtesy of [Elosande](http://elosande.deviantart.com/art/Thanksgiving-dress-416622007)

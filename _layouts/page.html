@@ -1,14 +1,63 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+{% include head.html %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+<body>
 
-</div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .transparent-header {
+            background: url('/images/splash.jpeg') center / cover;
+        }
+        
+        .transparent-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            opacity: 0.85;
+        }
+        
+        .transparent-header .mdl-layout__header,
+        .transparent-header .mdl-layout__drawer-button {
+            color: white;
+        }
+    </style>
+
+    <div class="transparent-header mdl-layout mdl-js-layout--transparent">
+        <header class="mdl-layout__header  mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">{{ page.display }}</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="/">Home</a>
+                    <a class="mdl-navigation__link" href="/blog">Blog</a>
+                    <a class="mdl-navigation__link" href="/about">About</a>
+                    <a class="mdl-navigation__link" href="/projects">Projects</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Berwyn</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/">Home</a>
+                <a class="mdl-navigation__link" href="/blog">Blog</a>
+                <a class="mdl-navigation__link" href="/about">About</a>
+                <a class="mdl-navigation__link" href="/projects">Projects</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            {{ content }}
+        </main>
+    </div>
+
+</body>
+
+</html>

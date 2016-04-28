@@ -93,7 +93,7 @@ Problem **_super_** solved!
 
 You see, this employer was concerned about keeping their keystore and key passwords in their source control (Mind you, this is a private, self-hosted, secured source control). Something about security and red tape.
 
-{<1>}![](/content/images/2014/Jul/lyra_table.gif)
+![](/images/ponies/lyra_table.gif)
 
 At this point, I'm mad. I'm not even working for this company, just helping my friend out of pity, and I'm solving these major, complex, corporate-BS issues for them. Suddenly, lightbulb! Flash of brilliance! What if we put the signing configs in their own gradle file, and omit that from source control? You then have a file that someone, somewhere who feels like being managerial can control, and nobody without it can build the app for the Play Store. It all takes three simple steps:
 
@@ -104,7 +104,7 @@ At this point, I'm mad. I'm not even working for this company, just helping my f
 
 At this point, he was able to produce production builds of the company's apps just like the old build system and I got to revel in my victory.
 
-{<2>}![](/content/images/2014/Jul/luna_clap.gif)
+![](/images/ponies/luna_clap.gif)
 
 Anyway, you can expect more posts in the near future. I'd like to start blogging about things I'm actually doing closer to real-time, as well as customise the site a bit more. Cheers, and until next time!
 

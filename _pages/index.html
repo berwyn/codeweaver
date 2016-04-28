@@ -1,29 +1,59 @@
 ---
-layout: default
+layout: page
 icon: home
 display: Home
 permalink: /
 ---
-
-<div class="home">
-
-    <div class="about">
-        <h1>About Me</h1>
-        <p>
+<div class="mdl-grid">
+    <div class="about mdl-card mdl-shadow--2dp mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--12-col-tablet">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">About me</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
             I'm a software engineer with a passion for Android development, a
             career in front-end web development, a fondness for good user
             experiences, and a drive to craft quality software.
-        </p>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a href="/about" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                about me
+            </a>
+            <a href="/projects" class="mdl-button mdl-button--colored mld-js-button mdl-js-ripple-effect">
+                about my work
+            </a>
+        </div>
     </div>
-
-    <h1 class="page-heading">Posts</h1>
-
-    <ul class="post-list">
-        {% for post in site.posts limit: 5 %}
-            {% include post-card.html %}
-        {% endfor %}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
+
+<div class="mdl-grid">
+    <h2 class="mdl-cell--4-col mdl-cell--2-offset-desktop mdl-cell--12-col-tablet" style="color:white">Posts</h2>
+</div>
+
+{% for post in site.posts limit: 5 %}
+<div class="mdl-grid">
+    <div class="mdl-card mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--12-col-tablet">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            {{ post.content | split:'<!-- break -->' | first }}
+        </div>
+        {% if post.content contains '<!-- break -->' %}
+            <div class="mdl-card__actions mdl-card--border">
+                <a href="{{ post.url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    read more
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endfor %}
+
+<footer class="mdl-mega-footer">
+    <div class="mdl-footer__bottom-section">
+        <div class="mdl-logo">Berwyn</div>
+        <ul class="mdl-mega-footer__link-list">
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
+        </ul>
+    </div>
+</footer>
