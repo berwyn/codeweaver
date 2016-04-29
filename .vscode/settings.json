@@ -3,6 +3,8 @@
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
-        ".jekyll-metadata": true
+        ".jekyll-metadata": true,
+        ".vscode/.browse.VC.db*": true,
+        ".sass-cache": true
     }
 }

@@ -27,7 +27,7 @@
     {
         "position": "Contractor",
         "name": "Utah Colleges of Applied Technology",
-        "icon": "/images/ucat.png",
+        "icon": "/images/ucat.jpg",
         "tech": [
             "c#",
             "wcf",

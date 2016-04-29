@@ -4,8 +4,9 @@ icon: home
 display: Home
 permalink: /
 ---
+
 <div class="mdl-grid">
-    <div class="about mdl-card mdl-shadow--2dp mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--12-col-tablet">
+    <div class="mdl-card mdl-shadow--2dp mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--12-col-tablet">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">About me</h2>
         </div>
@@ -32,12 +33,3 @@ permalink: /
 {% for post in site.posts limit: 5 %}
     {% include post-card.html %}
 {% endfor %}
-
-<footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">Berwyn</div>
-        <ul class="mdl-mini-footer__link-list">
-            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
-        </ul>
-    </div>
-</footer>

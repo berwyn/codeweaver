@@ -6,39 +6,52 @@ icon: account-circle
 display: About
 ---
 
-<p>
-    I'm a software engineer currently working at as a
-    {{ site.data.jobs[0].position }} at {{ site.data.jobs[0].name }}, but the
-    contents of this site represent my own opinions.
-</p>
-<p>
-    I've worked in Java, C#, TypeScript, JavaScript, CoffeeScript
-    (seeing a trend there?), Go, Ruby, Rust, Python and a little bit
-    of Haskell. I'm a particular fan of functional programming, the
-    observable pattern, promises instead of callbacks, strong types,
-    and duck typing.
-</p>
-<p>
-    I'm very fond of Angular JS, I like my Sinatra clones, I've been
-    playing with ASP.NET vNext lately and really loving it, I have
-    a great desire to learn iOS and Windows' Universal App Platform,
-    and some day, I might learn to tolerate Electron.
+<div class="mdl-grid">
+    <div class="mdl-card mdl-shadow--2dp mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--12-col-tablet">
+        <div class="mdl-card__supporting-text">
+            <p>
+                I'm a software engineer currently working at as a
+                {{ site.data.jobs[0].position }} at {{ site.data.jobs[0].name }}, but the
+                contents of this site represent my own opinions.
+            </p>
+            <p>
+                I've worked in Java, C#, TypeScript, JavaScript, CoffeeScript
+                (seeing a trend there?), Go, Ruby, Rust, Python and a little bit
+                of Haskell. I'm a particular fan of functional programming, the
+                observable pattern, promises instead of callbacks, strong types,
+                and duck typing.
+            </p>
+            <p>
+                I'm very fond of Angular JS, I like my Sinatra clones, I've been
+                playing with ASP.NET vNext lately and really loving it, I have
+                a great desire to learn iOS and Windows' Universal App Platform,
+                and some day, I might learn to tolerate Electron.
 
-    That's me in a nutshell. Who are you? Give me a holler, let's chat!
-</p>
-<div class="jobs">
-    <h1 class="page-header">Employment</h1>
-    <ul class="job-list">
+                That's me in a nutshell. Who are you? Give me a holler, let's chat!
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="mdl-grid">
+    <h2 class="mdl-cell--4-col-desktop mel-cell--12-col-tablet mdl-cell--2-offset-desktop" style="color:white">Employment</h2>
+</div>
+
+<div class="mdl-grid">
+    <ul class="mdl-list mdl-cell--12-col mdl-grid">
         {% for job in site.data.jobs %}
-            <li class="card inline-card">
-                <div class="card-hero">
-                    <img src="{{ job.icon }}" alt="{{ job.name | prepend: site.url }}">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title">{{ job.position }}</h4>
-                    <h5 class="card-subtitle">{{ job.name }}</h5>
-                    <p>{{ job.description }}</p>
-                </div>
+            <li class="mdl-list__item mdl-cell--4-col">
+                <span class="mdl-list__item-primary-content">
+                    <span class="mdl-card mdl-shadow--2dp square-card">
+                        <div class="mdl-card__title mdl-card--expand" style="background:url('{{ job.icon }}') center / cover">
+                            <h2 class="mdl-card__title-text">{{ job.name }}</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            {{ job.position }}
+                            {{ job.description }}
+                        </div>
+                    </span>
+                </span>
             </li>
         {% endfor %}
     </ul>
