@@ -4,7 +4,8 @@ title: "Of New Beginnings"
 date: 2014-01-14 23:30:00
 tags: jekyll, update, code, lessons
 ---
-So, I've finally done it. I _finally_ started this blog. After months, nay, _years_ of delaying starting a blog,
+So, I've finally done it. I _finally_ started this blog. After months, nay, _years_ of delaying starting
+a blog,
 I finally got around to it. And from this, there are lessons to be learned!
 
 <!-- break -->
@@ -16,10 +17,14 @@ I finally got around to it. And from this, there are lessons to be learned!
 5. Writing is hard. Substance takes time and many, many, _many_ rewrites
 6. Senioritis is the worst affliction
 
-Anyway, it's started, it's out there, it's a thing! I'm going to try to write here semi-regularly on all sorts of topics (though, you'll
-mainly see things like code, code, maybe some more code, some sarcasm, and maybe a small pastel-coloured horse or two). I'll also be tweaking the theme to better suit my tastes, but for now I can leave this one alone.
+Anyway, it's started, it's out there, it's a thing! I'm going to try to write here semi-regularly on all
+sorts of topics (though, you'll
+mainly see things like code, code, maybe some more code, some sarcasm, and maybe a small pastel-coloured
+horse or two). I'll also be tweaking the theme to better suit my tastes, but for now I can leave this one
+alone.
 
-For those interested in the mechanics of it, it's built on Jekyll, with [mmistakes'][mmistake] [HPSTR][hpstr] theme running on GitHub Pages. You can check out the [source code][source] if you're so inclined.
+For those interested in the mechanics of it, it's built on Jekyll, with [mmistakes'][mmistake] [HPSTR][hpstr]
+theme running on GitHub Pages. You can check out the [source code][source] if you're so inclined.
 
 Cheers, and until next time.
 

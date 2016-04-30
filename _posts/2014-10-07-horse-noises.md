@@ -51,7 +51,8 @@ There will also be integration with a secret project I'm cooking up that'll come
 ![BronyTunes logo](/images/other/bronytunes.png)
 
 #### BronyTunes
-BronyTunes has quite a bit of skeleton in place, and is able to get any data it needs from the server. The problem is right now that there's no way to display it.
+BronyTunes has quite a bit of skeleton in place, and is able to get any data it needs from the server.
+The problem is right now that there's no way to display it.
 
 Currently, I'm working with mockups to figure out how I want the app to look.
 
@@ -75,27 +76,40 @@ Why yes, yes I did!
     data-dnt="true">
 <p>Man, this is quick when you get back in the flow :D. Tack grid done! /cc <a href="https://twitter.com/BronyTunesApp">@BronyTunesApp</a> <a href="http://t.co/mTrHRVMUDJ">pic.twitter.com/mTrHRVMUDJ</a></p>&mdash; berewolf (@_berwyn_) <a href="https://twitter.com/_berwyn_/status/456263134475341824">April 16, 2014</a></blockquote>
 
-But I'm not happy with the result, and there's much more to the app than what's mocked up there. I'm revisiting that stuff and working on other parts of the app, though none of that should take overly long.
+But I'm not happy with the result, and there's much more to the app than what's mocked up there. I'm
+revisiting that stuff and working on other parts of the app, though none of that should take overly long.
 
-As for functional parts of the app, Neigh will take care of media playback, to a degree. I want to look into supporting music caching and offline playback, and I need to work on supporting BronyTunes Radio, both of which will require some work on the BronyTunes side of things. I also want to work on caching a lot of the data the server provides so that I don't have to load a buttload of data every time the app starts up.
+As for functional parts of the app, Neigh will take care of media playback, to a degree. I want to look
+into supporting music caching and offline playback, and I need to work on supporting BronyTunes Radio, both
+of which will require some work on the BronyTunes side of things. I also want to work on caching a lot of
+the data the server provides so that I don't have to load a buttload of data every time the app starts up.
 
-Search is also something that needs to be looked at. Having access to the BronyTunes library is great, but it means nothing if you can't find the stuff you're looking for. I'm working on an approach to this that hopefully doesn't suck, and it's going to be a major target for beta testers when the time comes (more on that later).
+Search is also something that needs to be looked at. Having access to the BronyTunes library is great, but
+it means nothing if you can't find the stuff you're looking for. I'm working on an approach to this that
+hopefully doesn't suck, and it's going to be a major target for beta testers when the time comes (more on
+that later).
 
 ---
 
 ![EqBeats logo](/images/other/eqbeats.png)
 
 #### EqBeats
-EqBeats has had a fair bit of time, both in code and in design, heavily invested in it. Some of the basics are already working, and it had media playback that eventually turned into Neigh.
+EqBeats has had a fair bit of time, both in code and in design, heavily invested in it. Some of the basics
+are already working, and it had media playback that eventually turned into Neigh.
 
-So, even though it's close to ready to go (as far as the basics are concerned), it needs to be revisited. The media stuff needs to be pulled out and migrated to Neigh. One of the core components of EqBeats is also the search feature, and that needs to be added before I'm willing to release the app. This could be quick, it might not be. Web-based search is one thing I haven't handled before.
+So, even though it's close to ready to go (as far as the basics are concerned), it needs to be revisited.
+The media stuff needs to be pulled out and migrated to Neigh. One of the core components of EqBeats is
+also the search feature, and that needs to be added before I'm willing to release the app. This could be
+quick, it might not be. Web-based search is one thing I haven't handled before.
 
 ---
 
 ![top secret](/images/other/topsecret.jpg)
 
 #### Betas
-Now, the part that will most interest people, getting their hands on these apps. When I feel like each app is ready to be tested, I'll be making a Google+ group for that app and using the Play Store's official beta programme.
+Now, the part that will most interest people, getting their hands on these apps. When I feel like each app
+is ready to be tested, I'll be making a Google+ group for that app and using the Play Store's official beta
+programme.
 
 "How does that work," you ask? Easy!
 
@@ -105,7 +119,9 @@ Now, the part that will most interest people, getting their hands on these apps.
 
 Pretty simple!
 
-When the beta for an app is ready to launch, I'll have the app's Twitter announce it, so make sure to follow [@PonyvilleLive](https://twitter.com/ponyvillelive), and [@BronyTunesApp](https://twitter.com/bronytunesapp). EqBeats folk, you can listen on my [personal Twitter](https://twitter.com/_berwyn_).
+When the beta for an app is ready to launch, I'll have the app's Twitter announce it, so make sure to
+follow [@PonyvilleLive](https://twitter.com/ponyvillelive), and [@BronyTunesApp](https://twitter.com/bronytunesapp). 
+EqBeats folk, you can listen on my [personal Twitter](https://twitter.com/_berwyn_).
 
 ---
 <a name="tldr"></a>

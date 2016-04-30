@@ -9,7 +9,7 @@ tags: windows, tablet, technology, windows 8, the windows incident, development
 	
 <!-- break -->
 
-### The demons are banished
+##### The demons are banished
 
 Last I wrote, Asus was a foul demon making me want to ditch their tablet. As of today, I've changed my mind.
 
@@ -17,7 +17,7 @@ After taking some time to update the tablet and drivers, it's a pretty decent li
 
 Well, _almost._
 
-### All aboard
+##### All aboard
 
 Now that the tablet seemed to be working, I started loading up a few basic apps so I could get a feel for the user experience on touch devices. Coming from a Windows 8 PC, I knew what to expect from the apps, but coming from the perspective of an Android user I wasn't quite show what to expect interacting with the tablet.
 
@@ -39,7 +39,7 @@ _Oh Skype._
 
 ![](/images/other/605-y-u-no-guy.jpg)
 
-### Microsoft, why have you forsaken me?
+##### Microsoft, why have you forsaken me?
 
 You would expect that, as a first-party platform, Skype for Windows 8 would be a pretty good experience.
 
@@ -61,7 +61,7 @@ Silly Microsoft, your apps are supposed to be _better_ on their native platform!
 
 Oh, and can we talk navigation?
 
-### Baby go back!
+##### Baby go back!
 
 	"You can love someone so much... But you can never love people as much as you can miss them."
 	-- John Green
@@ -82,7 +82,7 @@ I'm still not quite sure what the Twitter app does, seemingly a bit of both...
 
 All the UI confusion aside, what I really miss is a true "take me back" button. Something to let me go back to Twitter after I've clicked a link and viewed the page (because you can't snap apps while in portrait mode on this tablet). There are any number of situations where I just wanted to go back to the last app I was in. Granted, you have the quick task switching afforded by the left bezel gestures, but it would still be great to just have a system-wide back button.
 
-### On the subject of debugging
+##### On the subject of debugging
 
 I started sinking my teeth into Windows Store development today. I have to say, I did miss Visual Studio. After installing ReSharper and setting the keybindings to the IntelliJ ones I'm used to, Visual Studio is quite the enjoyable IDE. Installing VS 2013 and the needed SDKs was simple and straigh forward, and Microsoft's templates are pretty comprehensive when it comes to kickstarting on the platform (assuming you're already familiar with C# and XAML). The thing that was least intuitive, though, was setting up remote debugging.
 

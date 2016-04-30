@@ -1,15 +1,69 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+{% include head.html %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+<body>
 
-</div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .transparent-header {
+            background: url('/images/splash.jpeg') center / cover;
+        }
+        
+        .transparent-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            opacity: 0.85;
+        }
+        
+        .transparent-header .mdl-layout__header,
+        .transparent-header .mdl-layout__drawer-button {
+            color: white;
+        }
+    </style>
+
+    <div class="transparent-header mdl-layout mdl-js-layout">
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Berwyn</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/">Home</a>
+                <a class="mdl-navigation__link" href="/blog">Blog</a>
+                <a class="mdl-navigation__link" href="/about">About</a>
+                <a class="mdl-navigation__link" href="/projects">Projects</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-grid mdl-cell--12-col">
+                <div class="mdl-card mdl-shadow--2dp mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--10-col-tablet">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">{{ page.title }}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell--12-col mdl-cell--stretch"></div>
+            <footer class="mdl-mini-footer md-cell--12-col">
+                <div class="mdl-mini-footer__left-section mdl-cell--12-col">
+                    <div class="mdl-logo">Berwyn</div>
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="{{ " /feed.xml " | prepend: site.baseurl }}">RSS</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>
